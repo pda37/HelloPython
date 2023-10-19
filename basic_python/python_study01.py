@@ -1,58 +1,58 @@
-# name = 'HX'
-# print('hello,python,', name)
-# print('hello,python,'+name)
-# # title()函数
-# print('hello world,', name.title())
-# # upper()函数
-# print(name.upper())
-# # lower()函数
-# print(name.lower())
+name = 'HX'
+print('hello,python,', name)
+print('hello,python,'+name)
+# title()函数
+print('hello world,', name.title())
+# upper()函数
+print(name.upper())
+# lower()函数
+print(name.lower())
 
 # first_name = 'hu'
-# last_name = 'xiang'
+# last_name = 'xi'
 # # 合并字符串+
 # full_name = first_name+' '+last_name
 # print(full_name)
 
-# # 空格和换行
-# print('真\t的\t很\t不\t错')
-# print('真的\n很不错')
+# 空格和换行
+print('真\t的\t很\t不\t错')
+print('真的\n很不错')
 
-# # 删除空白函数strip
-# name = ' huxiang '
-# name_r = name.rstrip()
-# name_l = name.lstrip()
-# name_a = name.strip()
-# print(name_r)
-# print(name_l)
-# print(name_a)
+# 删除空白函数strip
+name = ' hux '
+name_r = name.rstrip()
+name_l = name.lstrip()
+name_a = name.strip()
+print(name_r)
+print(name_l)
+print(name_a)
 
-# # 简单运算
-# num_1 = 3
-# num_2 = 5
-# # +
-# num0 = num_1 + num_2
-# print(num0)
-# num1 = sum([num_1, num_2])
-# print(num1)
-# # -
-# num2 = num_1 - num_2
-# # *
-# num3 = num_1 * num_2
-# # **
-# num4 = num_1 ** num_2
-# # /
-# num5 = num_1 / num_2
-# print(num2, num3, num4, num5)
+# 简单运算
+num_1 = 3
+num_2 = 5
+# +
+num0 = num_1 + num_2
+print(num0)
+num1 = sum([num_1, num_2])
+print(num1)
+# -
+num2 = num_1 - num_2
+# *
+num3 = num_1 * num_2
+# **
+num4 = num_1 ** num_2
+# /
+num5 = num_1 / num_2
+print(num2, num3, num4, num5)
 
-# # 函数str()
-# weight = 2
-# message = '这是一头重达' + str(weight) + '吨的非洲象'
-# print(message)
-# # input()默认字符串类型
-# weight = input('输入重量(单位:吨):')
-# message = '这是一头重达' + weight + '吨的非洲象'
-# print(message)
+# 函数str()
+weight = 2
+message = '这是一头重达' + str(weight) + '吨的非洲象'
+print(message)
+# input()默认字符串类型
+weight = input('输入重量(单位:吨):')
+message = '这是一头重达' + weight + '吨的非洲象'
+print(message)
 
 # # python之禅
 # import this
@@ -116,49 +116,8 @@
 # for animal in animals:
 #     print(animal)
 
-# # 表示该类是从哪个类继承而来的，所有类最终都会继承自 object 类
-# class Solution(object):
-#     def __init__(self, nums, target):
-#         self.nums = nums
-#         self.target = target
-#
-#     def twosum(self):
-#         for i in range(len(self.nums)-1):
-#             for j in range(i+1, len(self.nums)):
-#                 if self.nums[i] + self.nums[j] == self.target:
-#                     return [i, j]
-#
-#
-# # 类对象支持两种操作：属性引用和实例化
-# result = Solution([3, 2, 4, 100, 1000, 10000], 11000)  # 实例化
-# result.twosum()  # 属性引用
 
-# 两数之和
-# class Solution():
-#     def __init__(self, nums, target):
-#         self.nums = nums
-#         self.target = target
-#
-#     def twosum(self):
-#         for i in range(len(self.nums)-1):
-#             for j in range(i + 1, len(self.nums)):
-#                 two = self.nums[i] + self.nums[j]
-#                 if two == self.target:
-#                     return [i, j]
-#
-#
-# result = Solution([3, 2, 4, 100, 1000, 10000, 100000], 1100)
-# print(result.twosum())
 
-# def two(nums, target):
-#     for i in range(len(nums)-1):
-#         for j in range(i + 1, len(nums)):
-#             if nums[i] + nums[j] == target:
-#                 return [i, j]
-#
-#
-# result = two([3, 2, 4, 100, 1000, 10000, 100000], 5)
-# print(result)
 
 # # 函数
 # def hello(name):
@@ -175,103 +134,6 @@
 #
 # hello()
 
-# # 整数反转输出
-# def reverse(num):
-#     if num == 0:
-#         return 0
-#     # elif num > (2**31-1) or num < -2**31:
-#     #     return 0
-#     else:
-#         dig = list(str(d) for d in str(num))  # 整数拆分成列表
-#         if num > 0:
-#             dig.reverse()
-#             num02 = int(''.join(dig))  # 将列表连接成字符串并转换成整数
-#             if num02 > (2**31-1):
-#                 return 0
-#             else:
-#                 return num02
-#         else:
-#             del dig[0]
-#             dig.reverse()
-#             num02 = int(''.join(dig))
-#             num03 = num02*(-1)
-#             if num03 < -2**31:
-#                 return 0
-#             else:
-#                 return num03
-#
-#
-# r = reverse(-2147483648)
-# print(r)
-
-# # 罗马数字转整数
-# def romanToInt(roman):
-#     roman_int = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
-#     a = 0
-#     for i in range(0, len(roman)-1):
-#         if roman_int[roman[i]] >= roman_int[roman[i+1]]:
-#             a = a + roman_int[roman[i]]
-#         else:
-#             a = a - roman_int[roman[i]]
-#     a = a + roman_int[roman[-1]]
-#     return a
-#
-#
-# r = romanToInt('M')
-# print(r)
-
-
-# class Solution:
-#     def romanToInt(self, roman):
-#         roman_int = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
-#         a = 0
-#         for i in range(0, len(roman)-1):
-#             if roman_int[roman[i]] >= roman_int[roman[i+1]]:
-#                 a = a + roman_int[roman[i]]
-#             else:
-#                 a = a - roman_int[roman[i]]
-#         a = a + roman_int[roman[-1]]
-#         return a
-#
-#
-# r = Solution()
-# b = r.romanToInt('M')
-
-
-# # 两数相加
-# def addTwoNumbers(l1, l2):
-#     a1 = 0
-#     a2 = 0
-#     for i in range(len(l1)-1, -1, -1):
-#         a1 = a1 + l1[i]*(10**i)
-#     for i in range(len(l2)-1, -1, -1):
-#         a2 = a2 + l2[i]*(10**i)
-#     a3 = a1 + a2
-#     b1 = list(int(d) for d in str(a3))  # 整数拆分成列表
-#     b2 = b1[::-1]
-#     return b2
-#
-#
-# r = addTwoNumbers([2, 4, 3], [5, 6, 4])
-# print(r)
-
-# # 盛最多水的容器
-# def maxArea(height):
-#     a = 0
-#     i = 0
-#     j = len(height)-1
-#     while i < j:
-#         s = abs((i-j)*(min(height[i], height[j])))
-#         a = max(a, s)
-#         if height[i] > height[j]:
-#             j = j - 1
-#         else:
-#             i = i + 1
-#     return a
-#
-#
-# r = maxArea([1, 8, 6, 2, 5, 4, 8, 3, 7])
-# print(r)
 
 # def mySqrt(x):
 #     i = 1
@@ -1677,240 +1539,3 @@
 #
 #
 # print(hammingWeight(21))
-
-# def summaryRanges(nums):
-#     ans = []
-#     if len(nums) > 0:
-#         begin = nums[0]
-#         for i in range(1, len(nums)):
-#             if nums[i] - nums[i-1] != 1:
-#                 end = nums[i-1]
-#                 if begin == end:
-#                     ans.append(str(begin))
-#                 else:
-#                     ans.append(str(begin)+'->'+str(end))
-#                 begin = nums[i]
-#         if begin == nums[-1]:
-#             ans.append(str(begin))
-#         else:
-#             ans.append(str(begin) + '->' + str(nums[-1]))
-#     return ans
-#
-#
-# print(summaryRanges([0,2,3,4,6,8]))
-
-# def findDisappearedNumbers(nums):
-#     ans = []
-#     n = len(nums)
-#     num = set(nums)
-#     for i in range(1, n+1):
-#         if i not in num:
-#             ans.append(i)
-#     return ans
-#
-#
-# print(findDisappearedNumbers([4,3,2,7,8,2,3,1]))
-
-# def minMoves(nums):
-#     ans = 0
-#     m = min(nums)
-#     for num in nums:
-#         ans += num - m
-#     return ans
-#
-#
-# print(minMoves([1, 2, 3]))
-
-# def maximumProduct(nums):
-#     nums.sort(reverse=True)
-#     return max(nums[0]*nums[1]*nums[2], nums[-1]*nums[-2]*nums[0])
-#
-#
-# print(maximumProduct([-100,-3,-8,-9,10]))
-
-# def findRelativeRanks(score):
-#     score2 = sorted(score, reverse=True)
-#     ans = {}
-#     if len(score2) == 1:
-#         ans[score2[0]] = 'Gold Medal'
-#     elif len(score2) == 2:
-#         ans[score2[0]] = 'Gold Medal'
-#         ans[score2[1]] = 'Silver Medal'
-#     elif len(score2) >= 3:
-#         ans[score2[0]] = 'Gold Medal'
-#         ans[score2[1]] = 'Silver Medal'
-#         ans[score2[2]] = 'Bronze Medal'
-#         for i in range(3, len(score2)):
-#             ans[score2[i]] = str(i+1)
-#     score_order = []
-#     for s in score:
-#         print(s)
-#         score_order.append(ans[s])
-#     return score_order
-#
-#
-# print(findRelativeRanks([1,3,5,2,8,7]))
-
-# def judgeCircle(moves):
-#     return moves.count('L') == moves.count('R') and moves.count('U') == moves.count('D')
-#
-#
-# print(judgeCircle('UDUDRLRL'))
-
-# def findMaxAverage(nums, k):
-#     win = sum(nums[0:k])
-#     ans = [win]
-#     for i in range(len(nums)-k):
-#         win = win - nums[i] + nums[i+k]
-#         ans.append(win)
-#     return max(ans)/k
-#
-#
-# print(findMaxAverage([1,12,-5,-6,50,3], 4))
-
-# def repeatedSubstringPattern(s):
-#     n = len(s)
-#     for i in range(1, int(n/2)+1):
-#         if n % i == 0:
-#             if s.count(s[0:i]) == int(n/i):
-#                 return True
-#     return False
-#
-#
-# print(repeatedSubstringPattern('aba'))
-
-# def maxCount(m: int, n: int, ops):
-#     if ops:
-#         a = ops[0][0]
-#         b = ops[0][1]
-#         for i in range(len(ops)):
-#             a = min(a, ops[i][0])
-#             b = min(b, ops[i][1])
-#         return a * b
-#     else:
-#         return m * n
-#
-#
-# print(maxCount(m=3, n= , ops=[[2,2],[3,3]]))
-
-# def findRestaurant(list1, list2):
-#     m, n = len(list1), len(list2)
-#     ans = []
-#     max_index = 2000
-#     if m < n:
-#         for i in range(m):
-#             if list1[i] in list2:
-#                 if i + list2.index(list1[i]) < max_index:
-#                     ans = [list1[i]]
-#                     max_index = i + list2.index(list1[i])
-#                 elif i + list2.index(list1[i]) == max_index:
-#                     ans.append(list1[i])
-#                     max_index = i + list2.index(list1[i])
-#     else:
-#         for i in range(n):
-#             if list2[i] in list1:
-#                 if i + list1.index(list2[i]) < max_index:
-#                     ans = [list2[i]]
-#                     max_index = i + list1.index(list2[i])
-#                 elif i + list1.index(list2[i]) == max_index:
-#                     ans.append(list2[i])
-#                     max_index = i + list1.index(list2[i])
-#     return ans
-#
-#
-# print(findRestaurant(["KFC", "Shogun", "Burger King"], ["Shogun", "Tapioca Express", "Burger King", "KFC"]))
-
-# from string import maketrans
-
-# def findWords(words):
-#     ans = []
-#     table = str.maketrans('qwertyuiopQWERTYUIOPasdfghjklASDFGHJKLzxcvbnmZXCVBNM', '1111111111111111111122222222222222222233333333333333')
-#     for i in range(len(words)):
-#         if len(set(words[i].translate(table))) == 1:
-#             ans.append(words[i])
-#     return ans
-#
-#
-# print(findWords(["Hello","Alaska","Dad","Peace"]))
-
-# def nextGreaterElement(nums1, nums2):
-#     ans = []
-#     for num in nums1:
-#         a = 0
-#         for i in range(nums2.index(num), len(nums2)):
-#             if nums2[i] > num:
-#                 ans.append(nums2[i])
-#                 a = 1
-#                 break
-#         if a == 0:
-#             ans.append(-1)
-#     return ans
-#
-#
-# print(nextGreaterElement(nums1 = [4,1,2], nums2 = [1,3,4,2]))
-
-# def findMaxConsecutiveOnes(nums):
-#     ans = []
-#     nums1 = list(str(n) for n in nums)
-#     nums2 = ''.join(nums1)
-#     nums3 = nums2.split('0')
-#     for num in nums3:
-#         ans.append(len(num))
-#     return max(ans)
-#
-#
-# print(findMaxConsecutiveOnes([1,1,0,1,1,1]))
-
-# def detectCapitalUse(word):
-#     if word.upper() == word or word.lower() == word:
-#         return True
-#     elif word[0].upper() == word[0] and word[1:].lower() == word[1:]:
-#         return True
-#     return False
-#
-#
-# print(detectCapitalUse('Wer'))
-
-# 学生出勤记录 I
-# def checkRecord(s: str):
-#     if s.count('A') > 1 or s.count('LLL') > 0:
-#         return False
-#     return True
-#
-#
-# print(checkRecord('PAPLPLL'))
-
-# 反转字符串 II
-# def reverseStr(s: str, k: int):
-#     if len(s) < k:
-#         return s[::-1]
-#     else:
-#         n = int(len(s)/k)
-#         ans = []
-#         for i in range(n):
-#             if i % 2 == 0:
-#                 if i == 0:
-#                     ans.append(s[i * k + k - 1::-1])
-#                 else:
-#                     ans.append(s[i * k + k-1:i*k-1:-1])
-#             else:
-#                 ans.append(s[i*k:i*k+k])
-#         if len(s) % k != 0:
-#             if n % 2 == 0:
-#                 ans.append(s[:n * k - 1:-1])
-#             else:
-#                 ans.append(s[n * k:])
-#         a = ''.join(ans)
-#         return a
-#
-#
-# print(reverseStr('ab', 3))
-
-# # 单调数列
-# def isMonotonic(nums):
-#     if nums == sorted(nums) or nums == sorted(nums, reverse=True):
-#         return True
-#     return False
-#
-#
-# print(isMonotonic([1, 4, 3, 3, 5]))
